@@ -1,0 +1,4 @@
+{
+    "mongoDBConnectURI" : "mongodb+srv://team:hhxzFitzSxXmQwHK@cluster0-o6ll6.mongodb.net/incidentDB?retryWrites=true&w=majority",
+    "jwtsecret" : "secret"
+}
