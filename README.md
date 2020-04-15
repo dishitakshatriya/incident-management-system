@@ -15,8 +15,6 @@ Open []() to view it in the browser.
 
 
 ####Contribution:
-* Anusha Asaithambi - Admin authentication, cors, APIs for status and ticket models, database design
-* Dishita Kshatriya - APIs for Admin, Priorities and Domains models, database design
-* Samuel Agrogundade - APIs for User model, User authentication, database design
-* Tianwer Zhou - APIs for Technician model, Technician authentication, database design
+* Anusha Asaithambi - Admin authentication & authorisation, Ticket CRUD, Validations , Technician CRUD, Database design
+* Dishita Kshatriya - Technician authentication & authorisation, Ticket CRUD, Node mailer, Technician CRUD, Database design
 
