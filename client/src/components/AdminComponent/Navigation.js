@@ -20,14 +20,20 @@ class Navigation extends React.Component {
     sessionStorage.removeItem('adminToken');
     this.props.history.push("/")
   }
+  handleOnClickViewTech=event=>{
+    this.props.history.push("/technicians/all")
+  }
+  handleOnClickCreateTech=event=>{
+    this.props.history.push("/technician/new")
+  }
   render() {
     return (
       <>
         <Navbar bg="light" variant="light">
           <Navbar.Brand href="#home">Incident Management System</Navbar.Brand>
           <Nav className="mr-auto">
-            <Nav.Link href="/technician/new">Create a Technician</Nav.Link>
-            <Nav.Link href="/technicians/all">View all Technician</Nav.Link>
+            <Nav.Link  onClick={this.handleOnClickCreateTech}>Create a Technician</Nav.Link>
+            <Nav.Link  onClick={this.handleOnClickViewTech}>View all Technician</Nav.Link>
             <Button variant="outline-info" onClick={this.handleOnClick}>Create Ticket</Button>
           </Nav>
           <Form inline>
