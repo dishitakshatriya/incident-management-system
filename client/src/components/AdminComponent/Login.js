@@ -39,6 +39,11 @@ class Login extends Component {
             });
         console.log(this.state.email);
     }
+
+    technicianSignin = (event) => {
+        var link = '/technician';
+        this.props.history.push(link);
+      }
     render() {
         var styles = { color: 'red' }
         return (
@@ -63,6 +68,9 @@ class Login extends Component {
               Don't have Account?
               <a className="fp1" href="/registration">Create New Account</a>
             </Form.Text>
+            <Button variant="primary" type="submit" onClick={this.technicianSignin}>
+                    Technician Sign in
+                </Button>
             </Jumbotron>
             </Container>
       )       
